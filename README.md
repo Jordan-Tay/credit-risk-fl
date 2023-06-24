@@ -23,3 +23,14 @@ Due to the size of the original dataset, it is not uploaded to the repository. T
 - `net_archs.py` contains the neural network architectures used in both datasets
 - `clients/fl_client` contains the abstract class `FLClient` for the FL clients
 - `clients/*`, the remaining clients are subclasses of `FLClient` that detail the train and test method for used in each network architecture
+
+## Creating a virtual environment
+Create a virtual environment to install the dependencies used in the project:
+```
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 -m ipykernel install --user --name=venv
+```
+
+Next, select the `venv` kernel in the jupyter notebook, and proceed to run `main.ipynb` and `main2.ipynb` to run the experiments.
